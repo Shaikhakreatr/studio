@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Suisse Intl Book';
+  src: url('/assets/fonts/suisse_intl/Suisse_Intl_Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Suisse Intl Bold';
+  src: url('/assets/fonts/suisse_intl/Suisse_Intl_Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Suisse Intl Medium';
+  src: url('/assets/fonts/suisse_intl/Suisse_Intl_Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Suisse Intl Regular';
+  src: url('/assets/fonts/suisse_intl/Suisse_Intl_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Suisse Intl Light';
+  src: url('/assets/fonts/suisse_intl/SuisseIntl-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-line;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* home page brands animation */
+
+.brands-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.brand-item {
+  margin-right: 113px; /* Adjust as needed */
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End off-screen to the left */
+  }
+}
+
+.marquee-container {
+  display: flex;
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.brand-animation {
+  animation: marquee 10s linear infinite; /* Adjust duration for speed */
+}
+
+/* button hover effect */
+@media (min-width: 640px) {
+  .link-hover:hover {
+    background-color: #373737;
+    color: #ffffff;
+  }
+
+  .link-hover2:hover {
+    background-color: #373737;
+    color: #DBDBDB;
+  }
+  
+  
+  .link-hover:hover .link-image {
+    content: url('/assets/images/light_upper_arrow.svg');
+  }
+
+  .link-hover2:hover .link-img2 {
+    content: url('/assets/images/white next.svg');
+  }
+
+  .link-hover2:hover .link-img3 {
+    content: url('/assets/images/white prev.svg');
+  }
+}
+
+
+/* workpagelisting  */
+
+.scrollbar-hide::-webkit-scrollbar{
+  display: none;
+}
+
+/* reserve hover */
+
+.group:hover .arrow{
+  content: url("/assets/images/white-arrow.svg");
+}
+
+
+/* tags animation */
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.tag {
+  transition: all 0.3s ease;
+}
+
+.tags-container:hover .tag {
+  animation: wave 0.6s ease;
+}
+
+.tags-container:hover .tag:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.tags-container:hover .tag:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.tags-container:hover .tag:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+/* Add more nth-child rules if there are more tags */
+
+
+/* footer link underline-animation */
+
+/* Base link styles */
+.footer-link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Underline animation */
+.footer-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust this value to move the underline closer or further from the text */
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: white; /* Color of the underline */
+  transition: width 0.3s ease;
+}
+
+/* Expand underline on hover */
+.footer-link:hover::after {
+  width: 100%;
+}
+
+/* form outline remove */
+input:focus, textarea:focus {
+  outline: none; /* Removes the default focus outline */
+  
+}
+
+/* FAQ paragraph link */
+
+.contactLink {
+  color:blue; /* Adjust color as needed */
+  
+}
+
+/* .mantine-Carousel-container{
+
+  justify-content: center;
+} */
+
+
+/* loader styles css */
+
+/* Add this CSS to your global stylesheet or a module */
+.typing-container {
+  color: #373737;
+  overflow: hidden; /* Ensures the text does not overflow */
+  white-space: nowrap; /* Keeps the text in a single line */
+  width: 0; /* Initial width for typing effect */
+  animation: typing 1s steps(50) forwards; /* Adjust duration for typing speed */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+
+/* community pop up */
+
+.show {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.hide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/* popup color */
+
+.popColor{
+  background-color: rgba(249, 249, 249, 0.9);
+}
+
+.blogPara a{
+  color: blue;
+}

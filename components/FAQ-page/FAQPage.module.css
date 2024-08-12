@@ -1,0 +1,237 @@
+.accordionTitle span:nth-of-type(2) {
+    padding-right: 60px;
+}
+
+.accordionBox{  
+    border: 1px solid #373737;
+    border-radius: 15px;
+    background-color: transparent;   
+}
+.accordionBox{
+    &[data-active]{
+    border: 1px solid #373737;
+    border-radius: 15px;
+    }
+}
+.accordionContent{
+    color:#373737;
+}
+
+.accordionIcon svg{
+    transform: scale(3);
+    rotate: 270deg;
+    color: #373737;
+}
+[data-active] .accordionIcon svg {
+    rotate: 180deg;
+    color: #373737;
+}
+
+@media (min-width: 640px) {
+    /* .accordionBox{
+        margin: calc(0.5rem* var(--mantine-scale)) !important;
+        padding: calc(0.625rem* var(--mantine-scale));
+    } */
+    .accordionPanel{
+        font-family: 'Suisse Intl Medium';
+        font-size: 17px;
+        color: #373737;
+        opacity: 70%;
+        /* background-color: yellow; */
+        /* background-color: #EADAFF; */
+    }
+    .controlBox1{
+        font-family: 'Suisse Intl Medium';
+        font-size: 12px;
+
+        color: #373737;
+        }
+        .controlBox2{
+            font-family: 'Suisse Intl Regular';
+            font-size: 12px;
+
+            color: #373737;
+
+            }
+}
+
+/* sm screen */
+
+@media (min-width: 640px) and (max-width: 1279px){
+    .accordionBox{
+        margin: calc(0.5rem* var(--mantine-scale)) !important;
+        padding: calc(0.625rem* var(--mantine-scale));
+    }
+    .accordionPanel{
+        font-family: "Suisse Intl Regular";
+        font-size: 16px;
+        line-height: 20px;
+                letter-spacing: -0.25px;
+        color: #373737;
+        opacity: 70%;
+    }
+    .controlBox1{
+        font-family: 'Suisse Intl Medium';
+        font-size: 18px;
+        line-height: 20px;
+                letter-spacing: -0.25px;
+        min-height: 91px;
+        color: #373737;
+        }
+        .controlBox2{
+            font-family: 'Suisse Intl Medium';
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: -0.25px;
+        min-height: 91px;
+        color: #373737;
+            }
+            .accordionTitle span:nth-of-type(2) {
+                padding-right: 50px;
+            }
+}
+
+/* lg screen */
+
+@media (min-width: 1280px) and (max-width: 1439px){
+    .controlBox1{
+        font-family: 'Suisse Intl Medium';
+        font-size: 20px;
+        line-height: 126%;
+        letter-spacing:-0.25px;
+        padding-top: 35px;
+        padding-left: 20px;
+        padding-right: 30px;
+        color: #373737;
+        
+        }
+        .controlBox2{
+            font-family: 'Suisse Intl Medium';
+            font-size: 20px;
+            line-height: 126%;
+            letter-spacing:-0.25px;
+            padding-top: 39px;
+            padding-left: 20px;
+            padding-right: 30px;
+            color: #373737;
+            
+            }
+        .accordionPanel{
+            font-family: "Suisse Intl Regular";
+            font-size: 16px;
+            color: #373737;
+            opacity: 70%;
+            line-height: 126%;
+            letter-spacing: -0.25px;
+            
+        }
+        .accordionBox{
+            padding-bottom:35px;
+        }
+}
+
+    /* Xl screen */
+    @media only screen and (min-width: 1440px) {
+        .controlBox1{
+            font-family: 'Suisse Intl Medium';
+            font-size: 20px;
+            line-height: 126%;
+            letter-spacing:-0.25px;
+            padding-top: 35px;
+            padding-left: 20px;
+            padding-right: 30px;
+            color: #373737;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            
+            }
+            .controlBox2{
+                font-family: 'Suisse Intl Medium';
+                font-size: 20px;
+                line-height: 126%;
+                letter-spacing:-0.25px;
+                padding-top: 35px;
+                padding-left: 20px;
+                padding-right: 30px;
+                color: #373737;
+                display: flex;
+                justify-items: center;
+                align-items: center;
+
+                }
+            .accordionPanel{
+                font-family: "Suisse Intl Regular";
+                font-size: 16px;
+                color: #373737;
+                opacity: 70%;
+                line-height: 126%;
+                letter-spacing: -0.25px;
+                
+            }
+            .accordionBox{
+                padding-bottom:35px;
+                display: flex;
+                justify-items: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            
+    }   
+
+    /* mobile screen */
+    @media only screen and (max-width: 639px) {
+        .controlBox1{
+            font-family: 'Suisse Intl Medium';
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: -0.25px;
+            font-weight:bolder;
+            color: #373737;
+            
+            }
+            .controlBox2{
+                font-family: 'Suisse Intl Medium';
+                font-size: 18px;
+                line-height: 20px;
+                letter-spacing: -0.25px;
+                font-weight:bolder;
+                color: #373737;
+                
+                }
+        .accordionWrap2{
+            margin-top: -20px;
+        }
+        .accordionBox{
+            padding:30px 10px; 
+            border: 1px solid #373737;
+            border-radius: 10px;
+            background-color: transparent; 
+        }
+        .accordionBox{
+            &[data-active]{
+            border: 1px solid #373737;
+            border-radius: 10px;
+            }
+        }
+        .accordionPanel{
+            font-family: 'Suisse Intl Regular';
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.25px;
+            color: #373737;
+            opacity: 70%;
+
+        }
+        .accordionTitle span:nth-of-type(1) {
+            display: none;
+        }
+        .accordionTitle span:nth-of-type(2) {
+            padding-right: 0px;
+        }
+    }
+
+
+      
+      

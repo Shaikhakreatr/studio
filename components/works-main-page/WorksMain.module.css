@@ -1,0 +1,56 @@
+/* screen below 640px */
+.carouselIndicator {
+    width: 8px;
+    height: 8px;
+    background-color: #373737; /* Customize as needed */
+    border-radius: 50%;
+    margin: 0 3px;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  
+  .carouselIndicator[data-active="true"] {
+    opacity: 1;
+    background-color: #000000; /* Customize as needed */
+  }
+  
+  .carouselIndicators {
+    position: absolute;
+    bottom: -30px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+  }
+
+
+  /*screen above 640px  */
+.carouselIndicatordesk {
+  width: 10px;
+  height: 10px;
+  background-color: #373737; /* Customize as needed */
+  border-radius: 50%;
+  margin: 0 5px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.carouselIndicatordesk[data-active="true"] {
+  opacity: 1;
+  background-color: #000000; /* Customize as needed */
+}
+
+.carouselIndicatorsdesk {
+  position: absolute;
+  bottom: -60px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
