@@ -12,10 +12,7 @@ const Privacy = () => {
       <p className="whitespace-pre-line font-san_regular text-[1rem] leading-[20px] tracking-[-0.25px] text-[#373737] sm:leading-[126%] sm:tracking-[-0.25px] lg:text-[1.125rem]">
         Kreatrminds Private Limited, Kreatr (“we”, “our”, or “us”) operates the
         website{" "}
-        <Link
-          className="underline"
-          href="https://studio-website-eta.vercel.app/"
-        >
+        <Link className="underline" href="https://www.thekreatr.com/">
           www.thekreatr.com
         </Link>{" "}
         (the “Service”). This Privacy Policy outlines how we collect, use, and
@@ -67,10 +64,7 @@ const Privacy = () => {
       <br />
       <p className="whitespace-pre-line font-san_regular text-[1rem] leading-[20px] tracking-[-0.25px] text-[#373737] sm:leading-[126%] sm:tracking-[-0.25px] lg:text-[1.125rem]">
         All materials published on{" "}
-        <Link
-          className="underline"
-          href="https://studio-website-eta.vercel.app/"
-        >
+        <Link className="underline" href="https://www.thekreatr.com/">
           www.thekreatr.com
         </Link>{" "}
         , including and not restricted to website design, content, logos,
